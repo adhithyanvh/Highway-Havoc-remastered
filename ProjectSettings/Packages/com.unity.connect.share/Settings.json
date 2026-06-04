@@ -19,7 +19,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"C:/Users/Adhithyan/Highway Havoc/WebGL Builds/Highway Havoc/Highwayy Havoc/HighwayHavoc/HighwayHavoc;C:/Users/Adhithyan/Highway Havoc/WebGL Builds/Highway Havoc/Highwayy Havoc/HighwayHavoc;C:/Users/Adhithyan/Highway Havoc/WebGL Builds/Highway Havoc/Highwayy Havoc;C:/Users/Adhithyan/Highway Havoc/WebGL Builds/Highway Havoc;;;;;;\"}"
+                "value": "{\"m_Value\":\"C:/Users/Adhithyan/Highway Havoc/GameBuild;C:/Users/Adhithyan/Highway Havoc/WebGL Builds/Highway Havoc/Highwayy Havoc/HighwayHavoc/HighwayHavoc;C:/Users/Adhithyan/Highway Havoc/WebGL Builds/Highway Havoc/Highwayy Havoc/HighwayHavoc;C:/Users/Adhithyan/Highway Havoc/WebGL Builds/Highway Havoc/Highwayy Havoc;C:/Users/Adhithyan/Highway Havoc/WebGL Builds/Highway Havoc;;;;;\"}"
             }
         ]
     }
