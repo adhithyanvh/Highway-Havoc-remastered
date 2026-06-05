@@ -13,15 +13,12 @@ public class CarGarage : MonoBehaviour
     public Button nextButton;
     public Button selectButton;
     public int carNumber;
-    public static int cameraNum;
-
-    public static CarGarage instance;
-
+    public int cameraNum;
+    
     // Start is called before the first frame update
     void Start()
     {
-        instance = this;
-        cameraNum = 0;
+       
 
     }
 
@@ -29,7 +26,7 @@ public class CarGarage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cameraNum == 0)
+        /*if (cameraNum == 0)
         {
             myCamera.transform.position = camPositions[0].transform.position;
 
@@ -48,7 +45,7 @@ public class CarGarage : MonoBehaviour
         if (cameraNum == 3)
         {
             cameraNum = 0;
-        }
+        }*/
     }
 
     //Next button

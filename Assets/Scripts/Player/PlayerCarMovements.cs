@@ -18,7 +18,7 @@ public class PlayerCarMovements : MonoBehaviour
     {
         // Car will be spawned depending on the carNumber!
 
-        if (CarGarage.instance.carNumber == 0)
+       /* if (CarGarage.instance.carNumber == 0)
         {
             Instantiate(PlayerCars[CarGarage.instance.carNumber], Playerr.transform.position, Quaternion.identity);
 
@@ -34,7 +34,7 @@ public class PlayerCarMovements : MonoBehaviour
         {
             Instantiate(PlayerCars[CarGarage.instance.carNumber], Playerr.transform.position, Quaternion.identity);
 
-        }
+        }*/
     }
 
     // Update is called once per frame
