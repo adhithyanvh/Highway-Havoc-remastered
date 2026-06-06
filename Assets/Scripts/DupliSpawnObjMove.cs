@@ -7,7 +7,7 @@ public class DupliSpawnObjMove : MonoBehaviour
 {
  
         public float otherCarSpeed;
-        public RoadMoveOnly roadMoveOnly;
+        
 
         public bool isRightLane; 
 
@@ -15,12 +15,12 @@ public class DupliSpawnObjMove : MonoBehaviour
 
         void Update()
         {
-            if (roadMoveOnly.speed >= 55)
+            if (GameSpeedManager.speed >= 55)
             {
                 speedMultiplier = 3;
             }
 
-            otherCarSpeed = UnityEngine.Random.Range(roadMoveOnly.speed, roadMoveOnly.speed * speedMultiplier);
+            otherCarSpeed = UnityEngine.Random.Range(GameSpeedManager.speed, GameSpeedManager.speed * speedMultiplier);
 
             // Right(toward the player)
             if (isRightLane)

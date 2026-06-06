@@ -20,12 +20,12 @@ public class FailScene : MonoBehaviour
     {
         scoreOrig.text = "" + ScoreUpdater.instancee.score.ToString("0");
 
-        if(ModeSelect.instanceeee.mode == 1)
+        if(ModeSelect.mode == 1)
         {
             retry1.gameObject.SetActive(true);
             retry2.gameObject.SetActive(false);
         }
-        if(ModeSelect.instanceeee.mode == 2)
+        if(ModeSelect.mode == 2)
         {
             retry2.gameObject.SetActive(true);
             retry1.gameObject.SetActive(false);

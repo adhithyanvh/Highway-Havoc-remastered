@@ -754,6 +754,53 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1126647551412568066, guid: b5c9ea775a4c4d945be6c9993d5dd7ac, type: 3}
   m_PrefabInstance: {fileID: 6294052639853496317}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1619373487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1619373489}
+  - component: {fileID: 1619373488}
+  m_Layer: 0
+  m_Name: GameSpeedManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1619373488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619373487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa9c49aa8b52cf546af7fae4f86ecfea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameSpeedManager
+  speedIncreaseRate: 0.1
+  brakeFactor: 5
+  timeBetweenIncreases: 0.1
+--- !u!4 &1619373489
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619373487}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 900.14087, y: 0, z: -808.3816}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1637603426
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,7 +869,6 @@ MonoBehaviour:
   lanes:
   - {fileID: 11888925}
   - {fileID: 2123964420}
-  speed: 20
 --- !u!4 &1735699478
 Transform:
   m_ObjectHideFlags: 0
@@ -1161,6 +1207,19 @@ MonoBehaviour:
   - {fileID: 7627551134063533671, guid: e75fb4a2c50d21444ae9959bf96623b2, type: 3}
   - {fileID: 6095826534764057467, guid: 2565357470b0d4f4d833bfebf1d85237, type: 3}
   - {fileID: 9137257325074200247, guid: b8b4996dd2185c646818cd7ea9f2fc3f, type: 3}
+--- !u!114 &35296164058499454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35296164058499450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f6a88a5b789e4e4c832ae2902c55fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelectedCarMovmnts
+  speed: 0
 --- !u!4 &543450651620858088
 Transform:
   m_ObjectHideFlags: 0
@@ -1431,12 +1490,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
+    - {fileID: 6998454959991347283, guid: 94d0f53dfa5a8244ba3922659a26deb6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8776986452689660667, guid: 94d0f53dfa5a8244ba3922659a26deb6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 35296164058499451}
+    - targetCorrespondingSourceObject: {fileID: 8776986452689660667, guid: 94d0f53dfa5a8244ba3922659a26deb6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 35296164058499454}
   m_SourcePrefab: {fileID: 100100000, guid: 94d0f53dfa5a8244ba3922659a26deb6, type: 3}
 --- !u!81 &3980371585448838593
 AudioListener:
@@ -1759,3 +1822,4 @@ SceneRoots:
   - {fileID: 786801807}
   - {fileID: 1363507061}
   - {fileID: 543450651620858088}
+  - {fileID: 1619373489}

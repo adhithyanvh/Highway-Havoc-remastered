@@ -1,10 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RoadMoveOnly : MonoBehaviour
+public class TrafficCarMovement : MonoBehaviour
 {
-
+    [SerializeField] float speedIncreaser;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +15,11 @@ public class RoadMoveOnly : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.back * GameSpeedManager.speed * Time.deltaTime);
+        speedIncreaser = GameSpeedManager.speed - 0.5f;
+        transform.Translate(speedIncreaser * Time.deltaTime * Vector3.back);
+
     }
+
+
+
 }

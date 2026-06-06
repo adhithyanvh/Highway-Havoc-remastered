@@ -5,16 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class ModeSelect : MonoBehaviour
 {
-    public static ModeSelect instanceeee;
-    public int mode;
+    
+    public static int mode;
     // Start is called before the first frame update
     void Start()
-    {
-        instanceeee = this;
-    }
-
-    // Update is called once per frame
-    void Update()
     {
         
     }
