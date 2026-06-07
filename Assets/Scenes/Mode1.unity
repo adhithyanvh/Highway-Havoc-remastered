@@ -1151,9 +1151,6 @@ MonoBehaviour:
   road3: {fileID: 1060622646}
   point1: {fileID: 626694258}
   point2: {fileID: 1386790388}
-  scoreChecker: 0
-  theScore: 0
-  isLarge: 0
 --- !u!1 &2123964420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,19 +1204,6 @@ MonoBehaviour:
   - {fileID: 7627551134063533671, guid: e75fb4a2c50d21444ae9959bf96623b2, type: 3}
   - {fileID: 6095826534764057467, guid: 2565357470b0d4f4d833bfebf1d85237, type: 3}
   - {fileID: 9137257325074200247, guid: b8b4996dd2185c646818cd7ea9f2fc3f, type: 3}
---- !u!114 &35296164058499454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35296164058499450}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f6a88a5b789e4e4c832ae2902c55fc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SelectedCarMovmnts
-  speed: 0
 --- !u!4 &543450651620858088
 Transform:
   m_ObjectHideFlags: 0
@@ -1497,9 +1481,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8776986452689660667, guid: 94d0f53dfa5a8244ba3922659a26deb6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 35296164058499451}
-    - targetCorrespondingSourceObject: {fileID: 8776986452689660667, guid: 94d0f53dfa5a8244ba3922659a26deb6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 35296164058499454}
   m_SourcePrefab: {fileID: 100100000, guid: 94d0f53dfa5a8244ba3922659a26deb6, type: 3}
 --- !u!81 &3980371585448838593
 AudioListener:

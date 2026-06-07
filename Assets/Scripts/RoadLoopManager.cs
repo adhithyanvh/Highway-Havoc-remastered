@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RoadMove : MonoBehaviour
+public class RoadLoopManager : MonoBehaviour
 {
     public GameObject road1, road2, road3;
     public GameObject point1, point2;

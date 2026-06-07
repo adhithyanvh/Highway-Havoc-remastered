@@ -224,10 +224,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 623eeb3dbc0f05341ac2a431d8a0291b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherCarspeed: 0
-  roadMoveOnly: {fileID: 2882116384293070122, guid: 9619424e0c5bcfe4c974e66036033017, type: 3}
-  spawnCarMove: {fileID: 7540910536212173253, guid: fe87b214e9707b546ad7ed5eadaa1ed6, type: 3}
-  speedMultiplier: 1
+  trafficCarSpeed: 0
+  oppositeCarSpeed: 50
+  isRightLane: 0
 --- !u!1 &9043474519997090258 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8551654070373378105, guid: 99286866f8c285b45a392bf9e5b35bd7, type: 3}

@@ -74,13 +74,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 53ec6115b233000489d1dd52c385f7b0, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -345057141559586265}
-    - targetCorrespondingSourceObject: {fileID: 100004, guid: 53ec6115b233000489d1dd52c385f7b0, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1283940989758689078}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: 53ec6115b233000489d1dd52c385f7b0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3211091017893701548}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: 53ec6115b233000489d1dd52c385f7b0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2307849516674974701}
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 53ec6115b233000489d1dd52c385f7b0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5347742056685045280}
@@ -133,19 +133,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: 53ec6115b233000489d1dd52c385f7b0, type: 3}
   m_PrefabInstance: {fileID: 7627551134063630531}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &-345057141559586265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7627551134063533671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f6a88a5b789e4e4c832ae2902c55fc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!54 &1283940989758689078
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -194,6 +181,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.6752968, y: 1.9287843, z: 5.91544}
   m_Center: {x: -0.060959972, y: -0.07171597, z: -0.28630033}
+--- !u!114 &2307849516674974701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7627551134063533671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f6a88a5b789e4e4c832ae2902c55fc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCarController
+  moveSpeed: 6
+  lanePositions:
+  - 3.5
+  - 7.4
 --- !u!1 &7627551134063533673 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100010, guid: 53ec6115b233000489d1dd52c385f7b0, type: 3}
