@@ -1,28 +1,40 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TwoWayTrafficCarMovement : MonoBehaviour
 {
+    public float trafficCarSpeed;
 
-        public float trafficCarSpeed;
-        public float oppositeCarSpeed = 70f;
-        public bool isRightLane; 
+    [Header("Opposite Traffic")]
+    public float baseOppositeSpeed = 70f;
+    public float speedMultiplier = 0.5f;
 
-        void Update()
+    public bool isRightLane;
+
+    void Update()
+    {
+        trafficCarSpeed = GameSpeedManager.speed;
+
+        // Opposite traffic scaling
+        float oppositeCarSpeed =
+            baseOppositeSpeed +
+            (GameSpeedManager.speed * speedMultiplier);
+
+        // Right lane (toward player)
+        if (isRightLane)
         {
-
-        trafficCarSpeed = GameSpeedManager.speed; 
-
-            // Right(toward the player)
-            if (isRightLane)
-            {
-                transform.Translate(Vector3.forward * oppositeCarSpeed * 2f * Time.deltaTime);
-            }
-            else // Left (away from player)
-            {
-                transform.Translate(Vector3.back * trafficCarSpeed * Time.deltaTime);
-            }
+            transform.Translate(
+                Vector3.forward *
+                oppositeCarSpeed *
+                Time.deltaTime
+            );
         }
+        else // Left lane
+        {
+            transform.Translate(
+                Vector3.back *
+                trafficCarSpeed *
+                Time.deltaTime
+            );
+        }
+    }
 }

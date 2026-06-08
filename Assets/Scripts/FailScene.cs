@@ -1,48 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-public class FailScene : MonoBehaviour
+public class GameOverMenu : MonoBehaviour
 {
-    public Button retry1, retry2;
-    public TMP_Text scoreOrig;
-    // Start is called before the first frame update
+    [Header("UI")]
+    [SerializeField] private TMP_Text scoreText;
+
+    private int retrySceneIndex;
+
     void Start()
     {
-        
-    }
+        scoreText.text = ScoreUpdater.instancee.score.ToString("0");
 
-    // Update is called once per frame
-    void Update()
-    {
-        scoreOrig.text = "" + ScoreUpdater.instancee.score.ToString("0");
-
-        if(ModeSelect.mode == 1)
+        // Determine retry scene
+        if (ModeSelect.mode == 1)
         {
-            retry1.gameObject.SetActive(true);
-            retry2.gameObject.SetActive(false);
+            retrySceneIndex = 3;
         }
-        if(ModeSelect.mode == 2)
+        else if (ModeSelect.mode == 2)
         {
-            retry2.gameObject.SetActive(true);
-            retry1.gameObject.SetActive(false);
+            retrySceneIndex = 4;
         }
     }
 
-    public void Retry1()
+    public void RetryGame()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(retrySceneIndex);
     }
 
-    public void Retry2()
-    {
-        SceneManager.LoadScene(4);
-    }
-
-    public void ToHome()
+    public void LoadMainMenu()
     {
         SceneManager.LoadScene(0);
     }

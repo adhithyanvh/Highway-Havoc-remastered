@@ -14,15 +14,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 53ec6115b233000489d1dd52c385f7b0, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.0982914
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 53ec6115b233000489d1dd52c385f7b0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.0982914
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 53ec6115b233000489d1dd52c385f7b0, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.0982914
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 53ec6115b233000489d1dd52c385f7b0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -197,6 +197,7 @@ MonoBehaviour:
   lanePositions:
   - 3.5
   - 7.4
+  targetRotationY: 0
 --- !u!1 &7627551134063533673 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100010, guid: 53ec6115b233000489d1dd52c385f7b0, type: 3}

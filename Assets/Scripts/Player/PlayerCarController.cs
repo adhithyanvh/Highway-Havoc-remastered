@@ -46,7 +46,7 @@ public class PlayerCarController : MonoBehaviour
         {
             if (currentLane > 0)
             {
-                targetRotationY = -50f;
+                targetRotationY = -60f;
                 currentLane--;
             }
         }
@@ -60,7 +60,7 @@ public class PlayerCarController : MonoBehaviour
 
         Quaternion targetRotation = Quaternion.Euler(0, targetRotationY, 0);
 
-        transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation,5 * Time.deltaTime);
+        transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation,8 * Time.deltaTime);
 
         // Smooth lane movement
         transform.position = Vector3.MoveTowards(

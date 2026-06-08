@@ -148,7 +148,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: eafc798bbf7daeb4fa441cc1d9b6481e, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -557,6 +557,7 @@ GameObject:
   - component: {fileID: 1285441805}
   - component: {fileID: 1285441804}
   - component: {fileID: 1285441807}
+  - component: {fileID: 1285441808}
   m_Layer: 5
   m_Name: Mode2
   m_TagString: Untagged
@@ -707,6 +708,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1285441808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285441802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87385362fd2858e42bffa5252f6bb37d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonAnimations
 --- !u!1 &1327122404
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,7 +732,7 @@ GameObject:
   - component: {fileID: 1327122407}
   - component: {fileID: 1327122406}
   m_Layer: 5
-  m_Name: Image
+  m_Name: BackGroundImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -795,6 +808,7 @@ GameObject:
   - component: {fileID: 1356832982}
   - component: {fileID: 1356832981}
   - component: {fileID: 1356832984}
+  - component: {fileID: 1356832985}
   m_Layer: 5
   m_Name: Mode1
   m_TagString: Untagged
@@ -945,6 +959,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1356832985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356832979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87385362fd2858e42bffa5252f6bb37d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonAnimations
 --- !u!1 &1787005816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,7 +1088,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86d273161b51c6342b82fb77274d9c19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mode: 0
 --- !u!1 &1867408111
 GameObject:
   m_ObjectHideFlags: 0

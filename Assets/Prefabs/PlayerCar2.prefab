@@ -14,15 +14,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 348fa29d2b68ebf4498f1a0aa842d77a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2067343
+      value: 1.15
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 348fa29d2b68ebf4498f1a0aa842d77a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.2067343
+      value: 1.15
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 348fa29d2b68ebf4498f1a0aa842d77a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.2067343
+      value: 1.15
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 348fa29d2b68ebf4498f1a0aa842d77a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -183,6 +183,7 @@ MonoBehaviour:
   lanePositions:
   - 3.5
   - 7.4
+  targetRotationY: 0
 --- !u!54 &1624553178890785509
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 99286866f8c285b45a392bf9e5b35bd7, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.314109
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 99286866f8c285b45a392bf9e5b35bd7, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.314109
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 99286866f8c285b45a392bf9e5b35bd7, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.314109
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 99286866f8c285b45a392bf9e5b35bd7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -224,9 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dacaa5f221041544eb95bc30695e9f85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherCarspeed: 0
-  roadMoveOnly: {fileID: 2882116384293070122, guid: 9619424e0c5bcfe4c974e66036033017, type: 3}
-  speedMultiplier: 1
+  speedIncreaser: 0
 --- !u!1 &9043474519997090258 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8551654070373378105, guid: 99286866f8c285b45a392bf9e5b35bd7, type: 3}
